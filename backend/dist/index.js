@@ -9,7 +9,7 @@ const tasks_1 = __importDefault(require("./routes/tasks"));
 const auth_1 = __importDefault(require("./routes/auth"));
 const app = (0, express_1.default)();
 const port = 3000;
-app.use((0, cors_1.default)({ origin: 'http://localhost:5173' }));
+app.use((0, cors_1.default)({ origin: 'https://task-manager-test-phi.vercel.app' }));
 app.use(express_1.default.json()); //Para leer JSON en las peticiones
 app.get('/', (req, res) => {
     res.json({ message: 'Servidor Funcionando' });

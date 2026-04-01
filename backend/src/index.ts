@@ -6,7 +6,7 @@ import authRoutes from './routes/auth';
 const app = express();
 const port = 3000;
 
-app.use(cors({ origin: 'http://localhost:5173'}));
+app.use(cors({ origin: 'https://task-manager-test-phi.vercel.app'}));
 app.use(express.json()); //Para leer JSON en las peticiones
 
 app.get('/', (req: Request, res: Response) => {
